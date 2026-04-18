@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Příprava na zkoušky | Ájina za Jedna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="LogoClean.png" alt="Ájina za Jedna">
+        <span class="logo-text">Ajina za Jedna</span>
+      </a>
+      
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Domů</a>
+        <a href="index.html#products">Služby</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-hero" style="padding-bottom: 5rem;">
+    <a href="index.html" style="color: var(--accent-green); text-decoration: none; font-weight: 600; display: inline-block; margin-bottom: 2rem;">&larr; ZPĚT NA ÚVOD</a>
+    
+    <div class="contact-grid">
+      <div class="hero-image-wrap coming-soon-wrapper">
+        <span class="coming-soon-label">Připravujeme</span>
+        <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zkušební testy" class="hero-image">
+      </div>
+      
+      <div class="hero-text">
+        <span class="label-new">Sebevědomí u certifikace</span>
+        <h1>Exam <i>Success</i> Packs</h1>
+        <p>Ovládni oficiální formáty Cambridge, TOEFL a IELTS s mými vybranými sadami otázek a vysvětleními krok za krokem.</p>
+        
+        <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
+           <div class="coming-soon-wrapper" style="background: var(--white); padding: 1.5rem; border-left: 4px solid var(--accent-green); box-shadow: var(--shadow-sm);">
+             <span class="coming-soon-label">Brzy!</span>
+             <h4 style="font-family: inherit; font-size: 1.1rem; margin-bottom: 0.5rem;">Cambridge B2/C1 Pack</h4>
+             <p style="font-size: 0.85rem; margin-bottom: 1rem;">Reálné simulace + video-vysvětlení běžných chyb.</p>
+             <button class="btn btn-disabled" style="padding: 0.5rem 1rem; font-size: 0.7rem;">PŘIPRAVUJEME</button>
+           </div>
+
+           <div class="coming-soon-wrapper" style="background: var(--white); padding: 1.5rem; border-left: 4px solid var(--accent-light); box-shadow: var(--shadow-sm);">
+             <span class="coming-soon-label">Brzy!</span>
+             <h4 style="font-family: inherit; font-size: 1.1rem; margin-bottom: 0.5rem;">TOEFL iBT Mastery</h4>
+             <p style="font-size: 0.85rem; margin-bottom: 1rem;">Specifické strategie pro sekce Speaking a Writing.</p>
+             <button class="btn btn-disabled" style="padding: 0.5rem 1rem; font-size: 0.7rem; background-color: var(--accent-light);">PŘIPRAVUJEME</button>
+           </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online lekce | Ájina za Jedna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="LogoClean.png" alt="Ájina za Jedna">
+        <span class="logo-text">Ajina za Jedna</span>
+      </a>
+      
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Domů</a>
+        <a href="index.html#products">Služby</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-hero" style="padding-bottom: 5rem;">
+    <a href="index.html" style="color: var(--accent-green); text-decoration: none; font-weight: 600; display: inline-block; margin-bottom: 2rem;">&larr; ZPĚT NA ÚVOD</a>
+    
+    <div class="contact-grid">
+      <div class="hero-image-wrap">
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lekce 1 na 1" class="hero-image">
+      </div>
+      
+      <div class="hero-text">
+        <span class="label-new">Individuální učení</span>
+        <h1>Lekce <i>One-to-One</i></h1>
+        <p>Lekce navržené přesně pro tvé potřeby. Od přípravy na pohovor až po konverzační plynulost.</p>
+        
+        <div style="background: var(--white); padding: 2.5rem; border-radius: 4px; border: 1px solid rgba(0,0,0,0.05); margin-top: 2rem; box-shadow: var(--shadow-md);">
+          <h3 style="margin-bottom: 1.5rem;">Rezervuj si lekci</h3>
+          <p style="font-size: 0.9rem;">Vyber si v kalendáři čas, který ti nejlépe vyhovuje. Rezervace probíhá přes systém TidyCal.</p>
+          
+          <!-- TidyCal Embed Placeholder -->
+          <div id="tidycal-embed" style="min-height: 500px; background: var(--bg-accent); display: flex; align-items: center; justify-content: center; border: 1px dashed var(--accent-light); margin: 1.5rem 0; border-radius: 4px;">
+             <!-- REPLACE THE DATA-PATH WITH YOUR TIDYCAL LINK -->
+             <div class="tidycal-embed" data-path="VÁŠ-TIDYCAL-LINK"></div>
+             <script src="https://tidycal.com/js/embed.js" async></script>
+             <p style="color: var(--text-muted); font-style: italic;">[Kalendář TidyCal se načte zde]</p>
+          </div>
+          
+          <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">Nemůžete najít vhodný termín? <a href="contact.html" style="color: var(--accent-green);">Napište mi</a>.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

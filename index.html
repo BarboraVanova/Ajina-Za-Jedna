@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ájina za Jedna | Angličtina, která dává smysl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="LogoClean.png" alt="Ájina za Jedna">
+        <span class="logo-text">Ajina za Jedna</span>
+      </a>
+      
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Domů</a>
+        <a href="index.html#products">Služby</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container viewport-hero">
+    
+    <div class="hero-main">
+      
+      <!-- Content Grid: Products (Left) | Text (Center) | Photo (Right) -->
+      <div class="hero-content-wrapper">
+        
+        <!-- Zone 1: Scaled-up Service Modules -->
+        <div id="products" class="side-products">
+          <a href="classes.html" class="mini-card">
+            <h4>Online lekce</h4>
+            <p>Individuální lekce 1 na 1 pro skutečné výsledky.</p>
+            <span class="arrow">→</span>
+          </a>
+
+          <a href="book.html" class="mini-card coming-soon-wrapper">
+            <span class="coming-soon-label">Připravujeme</span>
+            <h4>The Book</h4>
+            <p>Esenciální průvodce každodenní angličtinou.</p>
+            <span class="arrow">→</span>
+          </a>
+
+          <a href="exams.html" class="mini-card coming-soon-wrapper">
+            <span class="coming-soon-label">Připravujeme</span>
+            <h4>Příprava na zkoušky</h4>
+            <p>Oficiální balíčky pro Cambridge a TOEFL.</p>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Zone 2: Hero Text -->
+        <div class="hero-text">
+          <span class="label-new">Revoluce v angličtině</span>
+          <h1>Odemkni svůj<br><i>čistý</i> potenciál.</h1>
+          <p style="max-width: 450px;">Ahoj, jsem Barbora. Pomáhám studentům překonávat jazykové bariéry s dynamickým a moderním přístupem. Jsem tvůj průvodce k opravdové plynulosti.</p>
+          <div class="hero-cta">
+            <a href="contact.html" class="btn">Začni teď</a>
+          </div>
+        </div>
+
+        <!-- Zone 3: Floating Photo -->
+        <div class="hero-image-container">
+          <img src="Barbora.jpg" alt="Barbora Portrait" class="hero-image" onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'">
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
