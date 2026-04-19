@@ -8,69 +8,78 @@
 </head>
 <body>
 
-  <header>
-    <div class="container nav-container">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header class="glass-header">
+    <div class="container nav-wrapper">
       <a href="index.html" class="logo">
-        <img src="LogoClean.png" alt="Ájina za Jedna">
-        <span class="logo-text">Ajina za Jedna</span>
+        <img src="LogoV2.png" alt="Ájina za Jedna">
+        <span>Ájina za Jedna</span>
       </a>
       
       <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav-links" id="nav-links">
-        <a href="index.html">Domů</a>
-        <a href="index.html#products">Služby</a>
+      <nav class="nav-menu" id="nav-links">
+        <a href="index.html">Úvod</a>
+        <a href="classes.html" style="color: var(--accent-blue);">Lekce</a>
         <a href="contact.html">Kontakt</a>
+        <span style="opacity: 0.3; margin: 0 0.5rem; user-select: none;">|</span>
+        <a href="book.html">E-učebnice</a>
+        <a href="exams.html" style="color: var(--accent-blue);">Maturita</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page-hero" style="padding-bottom: 5rem;">
-    <a href="index.html" style="color: var(--accent-green); text-decoration: none; font-weight: 600; display: inline-block; margin-bottom: 2rem;">&larr; ZPĚT NA ÚVOD</a>
+  <main class="container page-hero">
+    <a href="index.html" class="back-link">&larr; ZPĚT NA ÚVOD</a>
     
-    <div class="contact-grid">
-      <div class="hero-image-wrap">
-        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lekce 1 na 1" class="hero-image">
+    <div class="contact-grid" style="align-items: center; margin-bottom: 4rem;">
+      <div class="hero-text hero-content" style="text-align: left;">
+        <div class="pill-badge">Online lekce</div>
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">Lekce <span>One-to-One</span></h1>
+        <p>Zarezervuj si individuální online lekci jeden na jednoho, kde se společně podíváme na tvou angličtinu do hloubky.</p>
+        <p style="color: var(--accent-teal); font-weight: 700; font-size: 1.1rem; margin-top: 2rem;">⬇ Vyber si volný termín v kalendáři níže ⬇</p>
       </div>
       
-      <div class="hero-text">
-        <span class="label-new">Individuální učení</span>
-        <h1>Lekce <i>One-to-One</i></h1>
-        <p>Lekce navržené přesně pro tvé potřeby. Od přípravy na pohovor až po konverzační plynulost.</p>
-        
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 4px; border: 1px solid rgba(0,0,0,0.05); margin-top: 2rem; box-shadow: var(--shadow-md);">
-          <h3 style="margin-bottom: 1.5rem;">Rezervuj si lekci</h3>
-          <p style="font-size: 0.9rem;">Vyber si v kalendáři čas, který ti nejlépe vyhovuje. Rezervace probíhá přes systém TidyCal.</p>
-          
-          <!-- TidyCal Embed -->
-          <div style="min-height: 500px; background: var(--bg-accent); border-radius: 4px; margin: 1.5rem 0;">
-             <div class="tidycal-embed" data-path="barcavanova/private-english-lesson"></div>
-             <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
-          </div>
-          
-          <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">Nemůžete najít vhodný termín? <a href="contact.html" style="color: var(--accent-green);">Napište mi</a>.</p>
+      <div class="hero-image-wrap" style="position: relative;">
+        <div class="glass-pane main-pane">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lekce 1 na 1" class="main-image" style="aspect-ratio: 4/3; min-height: 350px; height: 100%; object-fit: cover;">
+        </div>
+        <div class="glass-float anim-tilt" style="top: 15%; right: -20px;">
+          <div class="stat-circle" style="background-color: var(--accent-teal);">1:1</div>
+          <span>Mentoring</span>
         </div>
       </div>
+    </div>
+
+    <!-- TidyCal Full Width Block -->
+    <div class="glass-pane" style="transform: none; max-width: 100%; border-top: 5px solid var(--accent-blue); padding: 3rem 2rem;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: 600;">Rezervuj si lekci</h3>
+        <p style="font-size: 1rem; color: var(--text-muted);">Rezervace probíhá přes zabezpečený systém TidyCal.</p>
+      </div>
+      
+      <!-- TidyCal Embed inside Glass -->
+      <div style="min-height: 600px; background: rgba(255,255,255,0.6); border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden; border: 1px solid var(--glass-border);">
+         <div class="tidycal-embed" data-path="barcavanova/private-english-lesson"></div>
+         <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+      </div>
+      
+      <p style="font-size: 0.95rem; text-align: center; margin: 0;">Nemůžete najít vhodný termín? <a href="contact.html" style="color: var(--accent-blue); font-weight: 600;">Napište mi</a>.</p>
     </div>
   </main>
 
   <script>
     const mobileToggle = document.getElementById('mobile-toggle');
     const navLinks = document.getElementById('nav-links');
-
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-      });
-    });
+    if(mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+      document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
+    }
   </script>
 
 </body>

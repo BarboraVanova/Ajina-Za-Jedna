@@ -1,86 +1,112 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt | Ájina za Jedna</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <div class="container nav-container">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header class="glass-header">
+    <div class="container nav-wrapper">
       <a href="index.html" class="logo">
-        <img src="LogoClean.png" alt="Ájina za Jedna">
-        <span class="logo-text">Ajina za Jedna</span>
+        <img src="LogoV2.png" alt="Ájina za Jedna">
+        <span>Ájina za Jedna</span>
       </a>
-      
+
       <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav-links" id="nav-links">
-        <a href="index.html">Domů</a>
-        <a href="index.html#products">Služby</a>
-        <a href="contact.html">Kontakt</a>
+      <nav class="nav-menu" id="nav-links">
+        <a href="index.html">Úvod</a>
+        <a href="classes.html">Lekce</a>
+        <a href="contact.html" style="color: var(--accent-blue);">Kontakt</a>
+        <span style="opacity: 0.3; margin: 0 0.5rem; user-select: none;">|</span>
+        <a href="book.html">E-učebnice</a>
+        <a href="exams.html">Maturita</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page-hero" style="padding-bottom: 5rem;">
+  <main class="container page-hero">
     <div class="contact-grid">
-      <div class="contact-info">
-        <span class="label-new">Spojme se</span>
-        <h1>Napiš mi</h1>
+      <div class="contact-info hero-content" style="text-align: left;">
+        <div class="pill-badge">Spojme se</div>
+        <h1 style="font-size: 3.5rem; margin-bottom: 1rem;"><span>Kontakt</span></h1>
         <p>Máš nějaké dotazy o kurzech nebo materiálech? Napiš mi a já ti co nejdříve odpovím.</p>
-        
-        <div style="margin-top: 3rem; display: flex; flex-direction: column; gap: 1rem;">
-          <div>
-             <span style="font-size: 0.7rem; text-transform: uppercase; color: var(--accent-green); font-weight: 700;">Rezervace</span>
-             <p style="margin-top: 0.2rem; font-size: 1.1rem;"><a href="https://tidycal.com/barcavanova" target="_blank" style="color: var(--text-main); text-decoration: none; border-bottom: 2px solid var(--accent-green);">tidycal.com/barcavanova</a></p>
+
+        <div style="margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem;">
+
+          <div class="action-card outline" style="background: var(--glass-bg);">
+            <div class="ac-text">
+              <span
+                style="text-transform: uppercase; font-size: 0.75rem; font-weight: 700; color: var(--accent-teal);">Email</span>
+              <strong><a href="mailto:barca.vanova@gmail.com"
+                  style="color: inherit; text-decoration: none;">barca.vanova@gmail.com</a></strong>
+            </div>
           </div>
-          <div>
-            <span style="font-size: 0.7rem; text-transform: uppercase; color: var(--accent-green); font-weight: 700;">Email</span>
-            <p style="margin-top: 0.2rem; font-size: 1.1rem; color: var(--text-main);">hello@barbora-english.com</p>
+
+          <div class="action-card outline" style="background: var(--glass-bg);">
+            <div class="ac-text">
+              <span
+                style="text-transform: uppercase; font-size: 0.75rem; font-weight: 700; color: var(--accent-teal);">Instagram</span>
+              <strong><a href="https://instagram.com/ajinazajedna" target="_blank"
+                  style="color: inherit; text-decoration: none;">@ajinazajedna</a></strong>
+            </div>
           </div>
-          <div>
-            <span style="font-size: 0.7rem; text-transform: uppercase; color: var(--accent-green); font-weight: 700;">Instagram</span>
-            <p style="margin-top: 0.2rem; font-size: 1.1rem; color: var(--text-main);">@barbora_english</p>
+
+          <div class="action-card outline" style="background: var(--glass-bg);">
+            <div class="ac-text">
+              <span
+                style="text-transform: uppercase; font-size: 0.75rem; font-weight: 700; color: var(--accent-teal);">Rezervace</span>
+              <strong><a href="https://tidycal.com/barcavanova" target="_blank"
+                  style="color: inherit; text-decoration: none;">tidycal.com/barcavanova</a></strong>
+            </div>
           </div>
+
+        </div>
+
+        <div style="margin-top: 3rem; font-size: 0.8rem; color: var(--text-muted); opacity: 0.8;">
+          <strong>Kontaktní údaje:</strong><br>
+          Barbora Váňová<br>
+          IČO: 14312948
         </div>
       </div>
-      
-      <form class="contact-form" style="background: var(--white); padding: 3rem; border-radius: 4px; box-shadow: var(--shadow-lg);">
-        <div class="form-group">
-          <input type="text" placeholder="TVOJE JMÉNO" required>
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="TVŮJ EMAIL" required>
-        </div>
-        <div class="form-group">
-          <textarea rows="5" placeholder="JAK TI MOHU POMOCI?"></textarea>
-        </div>
-        <button type="submit" class="btn" style="width: 100%;">Odeslat zprávu</button>
-      </form>
+
+      <div class="glass-pane" style="transform: none; max-width: 100%; border-radius: 30px;">
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Tvoje jméno" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Tvůj email" required>
+          </div>
+          <div class="form-group">
+            <textarea rows="6" placeholder="Jak ti mohu pomoci?"></textarea>
+          </div>
+          <button type="submit" class="btn-solid" style="width: 100%;">Odeslat zprávu</button>
+        </form>
+      </div>
     </div>
   </main>
 
   <script>
     const mobileToggle = document.getElementById('mobile-toggle');
     const navLinks = document.getElementById('nav-links');
-
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-      });
-    });
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+      document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
+    }
   </script>
 
 </body>
+
 </html>

@@ -1,101 +1,139 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ájina za Jedna | Angličtina, která dává smysl</title>
+  <title>Ájina za Jedna | Moderní Angličtina</title>
+  <meta name="description" content="Barbora — online lekce angličtiny, příprava na zkoušky.">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <div class="container nav-container">
+  <!-- Dynamic Animated Background Gradients -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header class="glass-header">
+    <div class="container nav-wrapper">
       <a href="index.html" class="logo">
-        <img src="LogoClean.png" alt="Ájina za Jedna">
-        <span class="logo-text">Ajina za Jedna</span>
+        <img src="LogoV2.png" alt="Ájina za Jedna">
+        <span>Ájina za Jedna</span>
       </a>
-      
+
       <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav-links" id="nav-links">
-        <a href="index.html">Domů</a>
-        <a href="index.html#products">Služby</a>
+      <nav class="nav-menu" id="nav-links">
+        <a href="index.html" style="color: var(--accent-blue);">Úvod</a>
+        <a href="classes.html">Lekce</a>
         <a href="contact.html">Kontakt</a>
+        <span style="opacity: 0.3; margin: 0 0.5rem; user-select: none;">|</span>
+        <a href="book.html">E-učebnice</a>
+        <a href="exams.html">Maturita</a>
       </nav>
     </div>
   </header>
 
-  <main id="home" class="container viewport-hero">
-    
-    <div class="hero-main">
-      
-      <!-- Content Grid: Products (Left) | Text (Center) | Photo (Right) -->
-      <div class="hero-content-wrapper">
-        
-        <!-- Zone 1: Scaled-up Service Modules -->
-        <div id="products" class="side-products">
-          <a href="classes.html" class="mini-card">
-            <h4>Online lekce</h4>
-            <p>Individuální lekce 1 na 1 pro skutečné výsledky.</p>
-            <span class="arrow">→</span>
-          </a>
+  <main class="hero">
+    <div class="container">
+      <div class="hero-grid">
 
-          <a href="book.html" class="mini-card coming-soon-wrapper">
-            <span class="coming-soon-label">Připravujeme</span>
-            <h4>The Book</h4>
-            <p>Esenciální průvodce každodenní angličtinou.</p>
-            <span class="arrow">→</span>
-          </a>
+        <!-- LEFT: Ultra Clean Text Content -->
+        <div class="hero-content">
+          <!-- Otras ideas de frase para este pill badge: 
+               1. "🚀 Začni svou cestu k plynulosti"
+               2. "✨ Otevřeny rezervace pro nový semestr"
+               3. "💬 Investuj do své komunikace" -->
+          <div class="pill-badge">
+            <span class="pulse-dot"></span> 🚀 Začni svou cestu k plynulosti
+          </div>
 
-          <a href="exams.html" class="mini-card coming-soon-wrapper">
-            <span class="coming-soon-label">Připravujeme</span>
-            <h4>Příprava na zkoušky</h4>
-            <p>Oficiální balíčky pro Cambridge a TOEFL.</p>
-            <span class="arrow">→</span>
-          </a>
-        </div>
+          <h1>Aby i tvoje ájina byla <span>za jedna!</span></h1>
 
-        <!-- Zone 2: Hero Text -->
-        <div class="hero-text">
-          <span class="label-new">Revoluce v angličtině</span>
-          <h1>Odemkni svůj<br><i>čistý</i> potenciál.</h1>
-          <p style="max-width: 450px;">Ahoj, jsem Barbora. Pomáhám studentům překonávat jazykové bariéry s dynamickým a moderním přístupem. Jsem tvůj průvodce k opravdové plynulosti.</p>
-          <div class="hero-cta" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="classes.html" class="btn">Rezervovat lekci</a>
-            <a href="contact.html" class="btn btn-secondary">Napiš mi</a>
+          <p>Hello! Mé jméno je Barbora a již několik let pomáhám studentům angličtiny dosáhnout plynulosti, odmaturovat nebo složit certifikáty. Odučila jsem již přes 1000 lekcí a pomohu i tobě!</p>
+
+          <div class="action-cards">
+            <a href="classes.html" class="action-card">
+              <div class="ac-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="stroke-icon">
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke-width="1.5" />
+                  <path d="M12 16V12L14.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="ac-text">
+                <strong>Rezervovat Lekci</strong>
+                <span>Individuální lekce jeden na jednoho</span>
+              </div>
+            </a>
+
+            <a href="book.html" class="action-card outline">
+              <div class="ac-text">
+                <strong>E-učebnice: Ájina pro samouky</strong>
+                <span>Kompletní průvodce od úplných začátků až po pokročilou angličtinu</span>
+              </div>
+            </a>
+
+            <a href="exams.html" class="action-card outline">
+              <div class="ac-text">
+                <strong>Maturitní témata</strong>
+                <span>Usnadni si učení na zkoušku dospělosti</span>
+              </div>
+            </a>
           </div>
         </div>
 
-        <!-- Zone 3: Floating Photo -->
-        <div class="hero-image-container">
-          <img src="Barbora.jpg" alt="Barbora Portrait" class="hero-image" onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'">
+        <!-- RIGHT: Glassmorphism Visuals -->
+        <div class="hero-visuals">
+          <div class="glass-pane main-pane">
+            <div class="image-stack"
+              style="position: relative; width: 100%; aspect-ratio: 4/5; border-radius: 24px; overflow: hidden;">
+              <img src="BarboraIndex.jpg" alt="Barbora" class="main-image"
+                style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='Barbora.jpg'">
+            </div>
+          </div>
+
+          <!-- Floating UI Elements -->
+          <div class="glass-float float-1 anim-scale">
+            <div class="stat-circle">100%</div>
+            <span>Individuální<br>přístup</span>
+          </div>
+
+          <div class="glass-float float-2 anim-tilt">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>Cambridge Certificated</span>
+          </div>
         </div>
 
       </div>
-
     </div>
-
   </main>
 
   <script>
+    // Mobile Menu Toggle
     const mobileToggle = document.getElementById('mobile-toggle');
     const navLinks = document.getElementById('nav-links');
 
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
       });
-    });
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    }
   </script>
 
 </body>
+
 </html>

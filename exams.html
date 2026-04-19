@@ -8,54 +8,55 @@
 </head>
 <body>
 
-  <header>
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <img src="LogoClean.png" alt="Ájina za Jedna">
-        <span class="logo-text">Ajina za Jedna</span>
-      </a>
-      
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
 
-      <nav class="nav-links" id="nav-links">
-        <a href="index.html">Domů</a>
-        <a href="index.html#products">Služby</a>
+  <header class="glass-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <img src="LogoV2.png" alt="Ájina za Jedna">
+        <span>Ájina za Jedna</span>
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Otevřít menu"><span></span><span></span><span></span></button>
+      <nav class="nav-menu" id="nav-links">
+        <a href="index.html">Úvod</a>
+        <a href="classes.html">Lekce</a>
         <a href="contact.html">Kontakt</a>
+        <span style="opacity: 0.3; margin: 0 0.5rem; user-select: none;">|</span>
+        <a href="book.html">E-učebnice</a>
+        <a href="exams.html" style="color: var(--accent-blue);">Maturita</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page-hero" style="padding-bottom: 5rem;">
-    <a href="index.html" style="color: var(--accent-green); text-decoration: none; font-weight: 600; display: inline-block; margin-bottom: 2rem;">&larr; ZPĚT NA ÚVOD</a>
+  <main class="container page-hero">
+    <a href="index.html" class="back-link">&larr; ZPĚT NA ÚVOD</a>
     
     <div class="contact-grid">
-      <div class="hero-image-wrap coming-soon-wrapper">
-        <span class="coming-soon-label">Připravujeme</span>
-        <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zkušební testy" class="hero-image">
+      <div class="hero-image-wrap" style="position: relative;">
+        <div class="glass-pane main-pane">
+          <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zkušební testy" class="main-image" style="aspect-ratio: auto; min-height: 400px; opacity: 0.8;">
+          <div class="glass-float anim-scale" style="top: 20%; right: -20px; padding: 1rem 2rem;">
+            Coming Soon
+          </div>
+        </div>
       </div>
       
-      <div class="hero-text">
-        <span class="label-new">Sebevědomí u certifikace</span>
-        <h1>Exam <i>Success</i> Packs</h1>
-        <p>Ovládni oficiální formáty Cambridge, TOEFL a IELTS s mými vybranými sadami otázek a vysvětleními krok za krokem.</p>
+      <div class="hero-content" style="text-align: left;">
+        <div class="pill-badge">Maturita</div>
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">Maturitní <span>témata</span></h1>
+        <p>Hotová maturitní témata, která ti ušetří čas při přípravě na zkoušku dospělosti. Zpracovaná tak, aby ses učil/a rychleji, chytřeji a bez zbytečného hledání. Stačí otevřít a učit se!<br><br>
+           Témata lze zakoupit po jednom, pokud ti jen nějaké chybí, nebo jako balíček 20 nejčastějších otázek u maturity z angličtiny.<br><br>
+           Pokud máte na vašem seznamu témata, která v nabídce nejsou, klidně mě kontaktujte a můžeme se domluvit na individuálním vypracování.</p>
         
         <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
-           <div class="coming-soon-wrapper" style="background: var(--white); padding: 1.5rem; border-left: 4px solid var(--accent-green); box-shadow: var(--shadow-sm);">
-             <span class="coming-soon-label">Brzy!</span>
-             <h4 style="font-family: inherit; font-size: 1.1rem; margin-bottom: 0.5rem;">Cambridge B2/C1 Pack</h4>
-             <p style="font-size: 0.85rem; margin-bottom: 1rem;">Reálné simulace + video-vysvětlení běžných chyb.</p>
-             <button class="btn btn-disabled" style="padding: 0.5rem 1rem; font-size: 0.7rem;">PŘIPRAVUJEME</button>
-           </div>
-
-           <div class="coming-soon-wrapper" style="background: var(--white); padding: 1.5rem; border-left: 4px solid var(--accent-light); box-shadow: var(--shadow-sm);">
-             <span class="coming-soon-label">Brzy!</span>
-             <h4 style="font-family: inherit; font-size: 1.1rem; margin-bottom: 0.5rem;">TOEFL iBT Mastery</h4>
-             <p style="font-size: 0.85rem; margin-bottom: 1rem;">Specifické strategie pro sekce Speaking a Writing.</p>
-             <button class="btn btn-disabled" style="padding: 0.5rem 1rem; font-size: 0.7rem; background-color: var(--accent-light);">PŘIPRAVUJEME</button>
+          
+           <div class="glass-pane" style="transform: none; max-width: 100%; border-left: 4px solid var(--accent-teal);">
+             <span class="btn-disabled" style="margin-bottom: 1rem; display: inline-block;">Brzy</span>
+             <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-dark);">20 maturitních témat</h4>
+             <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-muted);">Balíček 20 nejčastějších otázek u maturity z angličtiny</p>
+             <button class="btn-solid" style="width: 100%; background: var(--glass-bg); color: var(--text-muted); border: 1px solid var(--glass-border); padding: 0.6rem;">PŘIPRAVUJEME</button>
            </div>
         </div>
       </div>
@@ -65,17 +66,10 @@
   <script>
     const mobileToggle = document.getElementById('mobile-toggle');
     const navLinks = document.getElementById('nav-links');
-
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-      });
-    });
+    if(mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+      document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
+    }
   </script>
-
 </body>
 </html>
