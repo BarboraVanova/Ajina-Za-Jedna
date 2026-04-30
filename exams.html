@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Příprava na zkoušky | Ájina za Jedna</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="LogoV2.png">
 </head>
 <body>
 
@@ -33,32 +34,41 @@
   <main class="container page-hero">
     <a href="index.html" class="back-link">&larr; ZPĚT NA ÚVOD</a>
     
-    <div class="contact-grid">
-      <div class="hero-image-wrap" style="position: relative;">
-        <div class="glass-pane main-pane">
-          <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zkušební testy" class="main-image" style="aspect-ratio: auto; min-height: 400px; opacity: 0.8;">
+    <div class="contact-grid" style="margin-bottom: 4rem; align-items: center;">
+      <div class="hero-image-wrap">
+        <div class="glass-pane main-pane" style="max-width: 580px; width: 100%;">
+          <img src="Maturitamockup.png" alt="Maturitní témata" class="main-image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;">
           <div class="glass-float anim-scale" style="top: 20%; right: -20px; padding: 1rem 2rem;">
-            Coming Soon
+            Maturita s přehledem
           </div>
         </div>
       </div>
-      
+
       <div class="hero-content" style="text-align: left;">
         <div class="pill-badge">Maturita</div>
         <h1 style="font-size: 3rem; margin-bottom: 1rem;">Maturitní <span>témata</span></h1>
         <p>Hotová maturitní témata, která ti ušetří čas při přípravě na zkoušku dospělosti. Zpracovaná tak, aby ses učil/a rychleji, chytřeji a bez zbytečného hledání. Stačí otevřít a učit se!<br><br>
            Témata lze zakoupit po jednom, pokud ti jen nějaké chybí, nebo jako balíček 20 nejčastějších otázek u maturity z angličtiny.<br><br>
            Pokud máte na vašem seznamu témata, která v nabídce nejsou, klidně mě kontaktujte a můžeme se domluvit na individuálním vypracování.</p>
-        
-        <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
-          
-           <div class="glass-pane" style="transform: none; max-width: 100%; border-left: 4px solid var(--accent-teal);">
-             <span class="btn-disabled" style="margin-bottom: 1rem; display: inline-block;">Brzy</span>
-             <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-dark);">20 maturitních témat</h4>
-             <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-muted);">Balíček 20 nejčastějších otázek u maturity z angličtiny</p>
-             <button class="btn-solid" style="width: 100%; background: var(--glass-bg); color: var(--text-muted); border: 1px solid var(--glass-border); padding: 0.6rem;">PŘIPRAVUJEME</button>
-           </div>
-        </div>
+      </div>
+    </div>
+
+    <!-- Product Cards Row (Aligned) -->
+    <div class="contact-grid" style="align-items: stretch;">
+      <!-- Bundle Card -->
+      <div class="glass-pane" id="bundle-section" style="transform: none; max-width: 600px; width: 100%; border-left: 4px solid var(--accent-teal); display: flex; flex-direction: column;">
+        <span class="pill-badge" style="display: inline-flex; padding: 0.3rem 0.8rem; font-size: 0.75rem; margin-bottom: 1rem; background-color: var(--accent-teal); color: white; align-self: flex-start;">Výhodné</span>
+        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-dark);">20 maturitních témat (Balíček)</h4>
+        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: var(--text-muted);">Kompletní balíček 20 nejčastějších témat u maturity z angličtiny za zvýhodněnou cenu.</p>
+        <a href="https://form.simpleshop.cz/oPWNx/buy/" target="_blank" class="btn-solid" style="width: 100%; display: block; text-align: center; background: var(--accent-teal); margin-top: auto;">KOUPIT BALÍČEK TÉMAT</a>
+      </div>
+
+      <!-- Individual Topics Card -->
+      <div class="glass-pane" style="transform: none; max-width: 600px; width: 100%; border-left: 4px solid #BCA38D; display: flex; flex-direction: column;">
+        <span class="pill-badge" style="display: inline-flex; padding: 0.3rem 0.8rem; font-size: 0.75rem; margin-bottom: 1rem; align-self: flex-start;">Dostupné</span>
+        <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-dark);">Jednotlivá maturitní témata</h4>
+        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: var(--text-muted);">Vyber si pouze ta, která potřebuješ.</p>
+        <a href="https://form.simpleshop.cz/xKAKe/buy/" target="_blank" class="btn-solid" style="width: 100%; display: block; text-align: center; background: #BCA38D; margin-top: auto;">KOUPIT JEDNOTLIVÁ TÉMATA</a>
       </div>
     </div>
   </main>
@@ -70,6 +80,22 @@
       mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
       document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
     }
+  </script>
+
+  <!-- SimpleShop.cz Integration -->
+  <script>
+   (function(i, s, o, g, r, a, m){
+    i[r] = i[r] || function(){
+     (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+   })(window, document, "script", "https://form.simpleshop.cz/prj/js/SimpleShopService.js", "sss");
+   // The following call would embed the form into a div with data-SimpleShopForm="oPWNx"
+   // sss("createForm", "oPWNx");
   </script>
 </body>
 </html>

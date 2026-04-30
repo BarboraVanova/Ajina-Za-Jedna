@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online lekce | Ájina za Jedna</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="LogoV2.png">
 </head>
 <body>
 
@@ -47,7 +48,7 @@
       
       <div class="hero-image-wrap" style="position: relative;">
         <div class="glass-pane main-pane">
-          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lekce 1 na 1" class="main-image" style="aspect-ratio: 4/3; min-height: 350px; height: 100%; object-fit: cover;">
+          <img src="Lekce1.jpg" alt="Lekce 1 na 1" class="main-image" id="random-lesson-image" style="aspect-ratio: 4/3; min-height: 350px; height: 100%; object-fit: cover;">
         </div>
         <div class="glass-float anim-tilt" style="top: 15%; right: -20px;">
           <div class="stat-circle" style="background-color: var(--accent-teal);">1:1</div>
@@ -79,6 +80,14 @@
     if(mobileToggle && navLinks) {
       mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
       document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); }); });
+    }
+
+    // Random Hero Image Logic
+    const images = ['Lekce1.jpg', 'Lekce2.jpg', 'Lekce3.jpg', 'Lekce4.jpg'];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    const heroImgElement = document.getElementById('random-lesson-image');
+    if (heroImgElement) {
+      heroImgElement.src = randomImage;
     }
   </script>
 
