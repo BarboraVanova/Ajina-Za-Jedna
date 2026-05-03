@@ -236,4 +236,5 @@ body {
   .hero-content h1 { font-size: 2.8rem; }
   .float-1 { right: 5%; top: 5%; transform: scale(0.8); }
   .float-2 { left: 5%; bottom: 5%; transform: scale(0.8); }
+  #random-lesson-image { min-height: auto !important; object-position: center top !important; }
 }
